@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neguin Musics</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/core-img/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/js.js" type="text/javascript"></script>
+    </head>
+    <body style="background: url(FUNDO.jpg);background-size:cover;width: 100%;">
+        <div class="main">
+           <form  onsubmit="InserirMusica()" id="cadmusic" method="POST" name="cadmusic" enctype="multipart/form-data">
+                <h1><span>Neguin Musics</span></h1>
+                <div class="inset">
+                    <p>
+                        <label>Nome da música</label>
+                        <input name="nome" type="text" placeholder="Insira o nome da música..." required/>
+                    </p>
+                    <p>
+                        <label>Nome do cantor</label>
+                        <input name="cantor" type="text" placeholder="Insira o nome do cantor..." required/>
+                    </p>
+                    <p>
+                        <label>Estilo: </label><br>
+                        <select id="tpmusic" name="tpmusic">
+                            <option value=" "></option>
+                            <option value="Sertanejo">Sertanejo</option>
+                            <option value="Funk">Funk</option>
+                            <option value="Pagode">Pagode</option>
+                            <option value="RAP">RAP</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Modão">Modão</option>
+                        </select>
+                    </p>
+                </div>
+                <p style="margin-left: 23px">
+                    <input type="file" id="musica" name="musica">
+                </p>
+                <p>
+                    <button type="submit" class="btn btn-primary btn-block">Inserir música</button>
+                </p>
+                <div style="margin-left: 29%" class="p-container">
+                    <span><a href="ReproducaoMusica.html">Escutar músicas</a></span>
+                </div>
+            </form>
+        </div> 
+    </body>
+</html>
